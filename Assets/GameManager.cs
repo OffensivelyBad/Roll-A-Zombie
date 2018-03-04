@@ -106,7 +106,10 @@ public class GameManager : MonoBehaviour {
 		this.Score += points;
 	}
 
-	public void CountDownTime() {
-		this.TimeRemaining -= 1;
+	private bool isGameOver() {
+		int zombieOffCount = 0;
+		for (int i = 0; i < zombies.Count; i++) {
+			GameObject zombie = zombies [i];
+		}
 	}
 }
